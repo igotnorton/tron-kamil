@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tron</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <div id="Window">
+    <div id="controlsWindow">
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <p style="font-size:24px; text-shadow: 2px 2px 2px #000">
+        WINNING CONDITION: 
+        </p>
+        <br>
+        The player has not collided with another player or the board border.
+        <br><br>
+      <p style="font-size:24px; text-shadow: 2px 2px 2px #000">
+      LOSE CONDITION: 
+      </p>
+      <br>
+      The player has colided with another player or the board border.
+      <br><br>
+      <p style="font-size:24px; text-shadow: 2px 2px 2px #000">
+      PLAYER CONTROLS:
+      </p>
+      <br>
+      <p style="font-size:20px; color:#f44; text-shadow: 2px 2px 2px #000">Player 1 (red):</p>
+      MOVE UP = arrow key up
+      <br>
+      MOVE DOWN = arrow key down
+      <br>
+      MOVE LEFT = arrow key left
+      <br>
+      MOVE RIGHT = arrow key right
+      <br><br>
+      <p style="font-size:20px; color:#3f3; text-shadow: 2px 2px 2px #000">Player 2 (green):</p>
+      MOVE UP = w key
+      <br>
+      MOVE DOWN = s key
+      <br>
+      MOVE LEFT = a key
+      <br>
+      MOVE RIGHT = d key
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div id="title">TRON</div>
+
+  <div id="mid">
+
+    <div id="bg" >
+      <div id="blur">
+        <canvas id="tron" width="512" height="512"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="bottom">
+    <button id="btn-controls" onclick="showKeys()">
+      Game Instructions</button>
+  </div>
+
+  <script src="./scripts/tron.js"></script>
+</body>
+</html>
